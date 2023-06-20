@@ -20,7 +20,7 @@ namespace DynamicUIControls.View.Controls
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            var data = (ControlDetail)item;
+            var data = (Controldetail)item;
             switch (data.Type)
             {
 
