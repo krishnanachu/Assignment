@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:DynamicUIControls.View.Controls"
+             x:Class="DynamicUIControls.MainPage">
+    <ContentPage.Resources>
+        <controls:FormControlTemplateSelector x:Key="FormControlTemplateSelector"/>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+
+
+        <StackLayout BackgroundColor="White" Grid.Row="0">
+            <ListView BackgroundColor="Transparent"  Margin="0" 
+                    SeparatorVisibility="None"
+                    x:Name="StandardDrawingList"
+                    RowHeight="-1"
+                    HasUnevenRows="True"
+                    SelectionMode="None"
+                    Footer=""
+                    
+                    ItemsSource="{Binding  MyFormData.Controls}" 
+                    ItemTemplate="{StaticResource FormControlTemplateSelector}"/>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>

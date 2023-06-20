@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DynamicUIControls.View.Controls.TextBoxView">
+  <ContentView.Content>
+        <StackLayout Padding="10" BackgroundColor="White">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding Discription}" TextColor="#313233" FontSize="17" FontFamily="Muli"/>
+            </StackLayout>
+            <Entry Text="" Placeholder="Enter Value"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
