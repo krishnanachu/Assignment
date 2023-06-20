@@ -23,7 +23,7 @@
                     SelectionMode="None"
                     Footer=""
                     
-                    ItemsSource="{Binding  MyFormData.Controls}" 
+                    ItemsSource="{Binding  MyFormData.ControlDetail}" 
                     ItemTemplate="{StaticResource FormControlTemplateSelector}"/>
         </StackLayout>
         
