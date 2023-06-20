@@ -11,7 +11,14 @@
             <Picker x:Name="picker"
                         Title="Select a Parameter"
                         TitleColor="LightGray"
-                       />
+                       >
+                <Picker.Items>
+                    <x:String>sample item1</x:String>
+                    <x:String>sample item2</x:String>
+                    <x:String>sample item3</x:String>
+                    
+                </Picker.Items>
+            </Picker>
         </StackLayout>
   </ContentView.Content>
 </ContentView>
