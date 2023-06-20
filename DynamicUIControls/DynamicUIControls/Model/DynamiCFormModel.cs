@@ -7,10 +7,10 @@ namespace DynamicUIControls.Model
 
     public class DynamiCFormModel
     {
-        public List<ControlDetail> Controls { get; set; }
+        public Controldetail[] ControlDetail { get; set; }
     }
 
-    public class ControlDetail
+    public class Controldetail
     {
         public string Type { get; set; }
         public string Discription { get; set; }
