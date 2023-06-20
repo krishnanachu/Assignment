@@ -17,7 +17,7 @@
         <StackLayout BackgroundColor="White" Grid.Row="0">
             <ListView BackgroundColor="Transparent"  Margin="0" 
                     SeparatorVisibility="None"
-                    x:Name="StandardDrawingList"
+                    x:Name="formList"
                     RowHeight="-1"
                     HasUnevenRows="True"
                     SelectionMode="None"
