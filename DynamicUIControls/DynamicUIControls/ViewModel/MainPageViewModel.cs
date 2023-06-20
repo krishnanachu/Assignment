@@ -23,7 +23,7 @@ namespace DynamicUIControls.ViewModel
                 if (value != null)
                 {
                     myFormData = value;
-                    NotifyPropertyChanged("SelectedItem");
+                    NotifyPropertyChanged("MyFormData");
                 }
 
             }
