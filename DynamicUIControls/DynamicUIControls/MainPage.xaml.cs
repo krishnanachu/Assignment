@@ -15,9 +15,9 @@ namespace DynamicUIControls
         public MainPage()
         {
             InitializeComponent();
-            //viewModel = new MainPageViewModel();
-            //this.BindingContext = viewModel;
-            //viewModel.LoadData();
+            viewModel = new MainPageViewModel();
+            this.BindingContext = viewModel;
+            viewModel.LoadData();
 
         }
     }
